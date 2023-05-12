@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --primary-color: #243949;
+    --secondary-color: #517fa4;
+    --gradient: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    --white-gradient: linear-gradient(45deg, #dfe9f3, #ffffff);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--gradient);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form label, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 40px;
+    padding: 0 20px;
+}
+
+form input:focus {
+    background: var(--white-gradient);
+}
+
+form button {
+    border: none;
+    background: var(--primary-color);
+    color:#fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background: var(--secondary-color);
+}
+
+.error-text {
+    margin-top: -15px;
+    font-size: 0.9rem;
+    color: #f00;    
+}
